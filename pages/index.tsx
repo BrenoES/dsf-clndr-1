@@ -91,7 +91,7 @@ export default function Home() {
               </Box>
             }
             {!isLoading && <Typography variant="h4">{`${listProducts.length} ${TextResult()} "${searchTerm}"`}</Typography>}
-            {listProducts.length && < ProductList data={listProducts} loading={isLoading} />}
+            {(listProducts.length > 0 ) && < ProductList data={listProducts} loading={isLoading} />}
 
           </Box>
         </Grid>
